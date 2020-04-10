@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: docker-springboot-demo
+  jpa:
+    generate-ddl: false
+    hibernate.ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate.generate_statistics: false
+      hibernate.show_sql: false
+      hibernate.jdbc.time_zone: UTC
+      hibernate.jdbc.batch_size: 50
+      hibernate.jdbc.batch_versioned_data: true
+      hibernate.order_inserts: true
+      hibernate.order_updates: true
+      hibernate.jdbc.lob.non_contextual_creation: true
+  datasource:
+    url: jdbc:postgresql://192.168.99.100:5432/users-db?reWriteBatchedInserts=true
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+    properties:
+      hibernate.temp.use_jdbc_metadata_defaults: false
+
+server:
+  port: 8088

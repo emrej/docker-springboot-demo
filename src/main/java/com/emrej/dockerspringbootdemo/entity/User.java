@@ -5,10 +5,9 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.UUID;
 
-@Data
-@Builder
+@Getter
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
 
     @Id
