@@ -14,6 +14,8 @@ Navigate to
  - http://{Your_Docker_Host_IP}:8088/users 
  to retrieve the list of users
 
-# Stand alone postgres (not needed anymore since we configure it in docker-compose.yml)
+<!-- 
+Stand alone postgres (not needed anymore since we configure it in docker-compose.yml)
 # docker run --name postgres_db -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -e POSTGRES_DB=users-db -d -p 5432:5432 postgres
+-->
 
