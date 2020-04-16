@@ -3,16 +3,21 @@ Demo project for Spring Boot and Postgres with Docker
 
 Build the project with 
  - mvn clean install
+
 to generate the fat jar file
 
+
 Then run  
-$ docker-compose build --no-cache my-webapp 
-$ docker-compose up
+$ docker-compose build --no-cache my-webapp
+
+$ docker-compose up (--detach)
 
 Application is accessible on port 8088, users table and data is auto configured via liquibase.
+
 Navigate to 
  - http://{Your_Docker_Host_IP}:8088/users 
- to retrieve the list of users
+ 
+to retrieve the list of users
 
 <!-- 
 Stand alone postgres (not needed anymore since we configure it in docker-compose.yml)
