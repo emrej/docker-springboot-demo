@@ -19,6 +19,10 @@ Navigate to
  
 to retrieve the list of users
 
+
+Medium article:
+https://medium.com/dev-jam/docker-in-a-nutshell-f2e315211195
+
 <!-- 
 Stand alone postgres (not needed anymore since we configure it in docker-compose.yml)
 $ docker run --name postgres_db -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -e POSTGRES_DB=users-db -d -p 5432:5432 postgres
